@@ -1,0 +1,26 @@
+# Who Wants To Be A Millionaire 💰 
+
+score = 0
+
+option1 = 'The Moon'
+option2 = 'A Balloon'
+option3 = 'SpongeBob'
+option4 = 'France'
+
+print(" ")
+print("What is the large white circle we see in the sky at night")
+print(" ")
+
+print("A.", option1)
+print("B.", option2)
+print("C.", option3)
+print("D.", option4)
+
+print(" ")  
+answer = input("What is your answer?")
+
+if answer == 'A' or answer == 'a': 
+  score += 100
+  print("Correct!")
+else:
+  print("Nope, sorry!")
