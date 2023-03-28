@@ -1,0 +1,38 @@
+
+weight = 41.5
+
+"""Ground Shipping"""
+gs_fc = 20
+cost_ground_premium = 125.00
+
+if weight <= 2:
+  gs_cost = weight *1.5 + gs_fc
+elif weight <= 6:
+  gs_cost = weight *3.0 + gs_fc
+elif weight <= 10:
+  gs_cost = weight *4.0 + gs_fc
+elif weight >= 10:
+  gs_cost = weight *4.75 + gs_fc
+
+print("Ground Shipping Standard: ")
+print(gs_cost)
+
+print(" ")
+print("Cost of Premium Ground Shipping: ")
+print(cost_ground_premium)
+
+"""Drone Shipping"""
+
+if weight <= 2:
+  drone_cost = weight *4.50
+elif weight <= 6:
+  drone_cost = weight *9.00
+elif weight <= 10:
+  drone_cost = weight *12.00
+elif weight >= 10:
+  drone_cost = weight *14.25
+
+print(" ")
+print("Drone Shipping Cost: ")
+print(drone_cost)
+
