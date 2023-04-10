@@ -5,6 +5,13 @@
 # (parameter1, parameter2, parameter3)
 # Parameter arguments are provided in calling the function (see calculate_expenses(200,100,100,5))
 
+# In Python, there are 3 different types of arguments we can give a function. 
+# Positional arguments: arguments that can be called by their position in the function definition.
+# Keyword arguments: arguments that can be called by their name.
+# Default arguments: arguments that are given default values.
+
+
+
 def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
   car_rental_total = car_rental_rate * trip_time
   hotel_total = hotel_rate * trip_time - 10
